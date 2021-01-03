@@ -77,30 +77,71 @@
 		<!-- main begins -->
 		<main class="body flex-grow-1">
 			<section class="title-bar con-min-width">
-				<h1 class="con"><i class="fas fa-exclamation-circle"></i> <span>NOTICE</span></h1>
-			</section><section class="section-1 con-min-width">
-	<div class="con">
-		<div class="article-list">
-			<header>
-				<div>
-					<div class="article-list__cell-id">번호</div>
-					<div class="article-list__cell-reg-date">날짜</div>
-					<div class="article-list__cell-writer">작성자</div>
-					<div class="article-list__cell-title">제목</div>
-				</div>
-			</header>
-			<main>
-				<div><div class="article-list__cell-id">3</div><div class="article-list__cell-reg-date">2021-01-04 00:30:31</div><div class="article-list__cell-writer">천승우</div><div class="article-list__cell-title"><a href="article_detail_3.html" class="hover-underline">제목3</a></div></div>
-			</main>
-		</div>
+				<h1 class="con"><i class="fas fa-file-invoice"></i> <span>ARTICLE DETAIL</span></h1>
+			</section><!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 
-		<div class="article-page-menu">
-			<ul class="flex flex-jc-c">
-				<li><a href="article_list_notice_1.html" class="flex flex-ai-c article-page-menu__link--selected">1</a></li>
-			</ul>
+<section class="section-1 con-min-width">
+	<div class="con">
+		<div class="article-detail">
+
+			<h2 class="article-detail__title"></h2>
+
+			<div class="article-detail__sub-info flex">
+				<div class="article-detail__board-name">공지사항</div>
+				<div class="article-detail__reg-date">2021-01-04 00:30:31</div>
+				<div class="article-detail__writer">천승우</div>
+			</div>
+
+			<div class="article-detail__body main-font">내용3</div>
+
+			<div class="article-detail__comment-box">
+				<div id="disqus_thread"></div>
+				<script>
+					(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://milkpotato-ssg-blog-1.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>
+					Please enable JavaScript to view the <a
+						href="https://disqus.com/?ref_noscript">comments powered by
+						Disqus.</a>
+				</noscript>
+			</div>
+
+			<div class="article-detail__menu flex">
+				<a title=""
+					href="article_detail_0.html"
+					class="hover-underline none">&lt;
+					이전글</a> <a href="article_list_notice_1.html"
+					class="hover-underline ">목록</a>
+				<a title=""
+					href="article_detail_0.html"
+					class="hover-underline none">다음글
+					&gt;</a>
+			</div>
 		</div>
 	</div>
-</section></main>
+</section>
+</main>
 <!-- main ends -->
 
 <!--bottom bar begins-->
